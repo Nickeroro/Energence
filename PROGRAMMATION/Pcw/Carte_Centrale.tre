@@ -1,0 +1,11 @@
+ÀÄCarte_Centrale
+   ÀÄMAIN  0/66  Ram=4
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ??0??
+      ÃÄ@PSTRINGC7_71  0/70  Ram=4
+      ³  ÃÄ@PUTCHAR_1_  0/38  Ram=1
+      ³  ÀÄ@PUTCHAR_1_  0/38  Ram=1
+      ÃÄ@delay_ms1  0/23  Ram=1
+      ÃÄtimed_getc_TinyBee  0/53  Ram=1
+      ³  ÀÄ@GETCH_1_  (Inline)  Ram=1
+      ÀÄ@PUTCHAR_2_  0/39  Ram=1

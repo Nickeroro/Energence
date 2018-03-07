@@ -1,0 +1,198 @@
+(ExpressProject "Schema_structurel"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB - PSpice")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\librairie\malib.olb"
+        (Type "Schematic Library"))
+      (File "C:\OrCAD\OrCAD_10.5\tools\capture\LIBRARY\PSPICE\source.olb"
+        (Type "Schematic Library"))
+      (File "C:\OrCAD\OrCAD_10.5\tools\capture\LIBRARY\PSPICE\sourcstm.olb"
+        (Type "Schematic Library"))
+      (File "C:\OrCAD\OrCAD_10.5\tools\capture\LIBRARY\PSPICE\special.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\schema_structurel.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (Board_sim_option "VHDL_flow")
+    (Netlist_TAB "3")
+    (LAYOUT_Netlist_File "NETLIST_2.MNL")
+    (LAYOUT_PCB_Footprint "{PCB Footprint}")
+    (TRUE)
+    (LAYOUT_Units "0")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File
+       "Z:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\ORCAD\SCHEMA_STRUCTUREL\SCHEMA_STRUCTUREL.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0
+       "{Item}\t{Quantity}\t{Reference}\t{Value}\t{PCB Footprint}")
+    (BOM_Header " Item\tQuantity\tReference\tValue\tPCB Footprint")
+    (BOM_Include_File
+       "Z:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\ORCAD\SCHEMA_STRUCTUREL\SCHEMA_STRUCTUREL.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "TRUE"))
+  (Folder "Outputs"
+    (File ".\schema_structurel-schematic1.net"
+      (Type "Report"))
+    (File ".\netlist_2.mnl"
+      (Type "LAYOUT Netlist File"))
+    (File ".\schema_structurel.bom"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\schema_structurel-schematic1-lmt1117t.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schema_structurel-schematic1-lmt1117t.sim"
+        (DisplayName "SCHEMATIC1-lmt1117t")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (LastUsedLibraryBrowseDirectory
+     "U:\Mes Documents\Projets\Projet 2017 Energence\Test_OrCad\Schema_Structurel\Librairie")
+  (PartMRUSelector
+    (C_2
+      (FullPartName "C_2.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (JUMPER_DP_O
+      (FullPartName "JUMPER_DP_O.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (BS170
+      (FullPartName "BS170.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (IRF520_1
+      (FullPartName "IRF520_1.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (LMT1117T33
+      (FullPartName "LMT1117T33.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    ("SW PUSHBUTTON-SPST/SM_0"
+      (FullPartName "SW PUSHBUTTON-SPST/SM_0.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (FZ750BS
+      (FullPartName "FZ750BS.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (CON6
+      (FullPartName "CON6.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (DS1337C
+      (FullPartName "DS1337C.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (CON1
+      (FullPartName "CON1.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (CON2
+      (FullPartName "CON2.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (FT232RL/USB
+      (FullPartName "FT232RL/USB.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-L
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (CON8
+      (FullPartName "CON8.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (XM/SM
+      (FullPartName "XM/SM.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (DS1307
+      (FullPartName "DS1307.Normal")
+      (LibraryName
+         "U:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\TEST_ORCAD\SCHEMA_STRUCTUREL\LIBRAIRIE\MALIB.OLB")
+      (DeviceIndex "0"))
+    (GND_EARTH
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC_ARROW
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (D1N1190
+      (FullPartName "D1N1190.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (PIC16F1827
+      (FullPartName "PIC16F1827.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (PIC16C505
+      (FullPartName "PIC16C505.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\MICROCONTROLLER.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 206 1273 47 634"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 28 1399 -24 727")
+        (Scroll "0 77")
+        (Zoom "94")
+        (Occurrence "/"))
+      (Path
+         "Z:\MES DOCUMENTS\PROJETS\PROJET 2017 ENERGENCE\ORCAD\SCHEMA_STRUCTUREL\SCHEMA_STRUCTUREL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "ntalec-b"))

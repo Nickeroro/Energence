@@ -1,0 +1,304 @@
+CCS PCM C Compiler, Version 4.130, 469               12-juin-17 09:41
+
+               Filename: U:\Mes Documents\Projets\Projet 2017 Energence\DOSSIER_FINAL\PROGRAMMATION\Pcw\Carte_Centrale.lst
+
+               ROM used: 296 words (7%)
+                         Largest free fragment is 2048
+               RAM used: 8 (2%) at main() level
+                         22 (6%) worst case
+               Stack:    2 locations
+
+*
+0000:  MOVLP  00
+0001:  GOTO   0E6
+0002:  NOP
+.................... #include <16F1827.h> 
+.................... //////// Standard Header file for the PIC16F1827 device //////////////// 
+.................... #device PIC16F1827 
+.................... #list 
+....................  
+.................... #device *=16 
+.................... #FUSES NOWDT                    //No Watch Dog Timer 
+.................... #FUSES INTRC_IO                 //Internal RC Osc, no CLKOUT 
+.................... #FUSES WDT_SW                    //No Watch Dog Timer, enabled in Software 
+.................... #FUSES PUT                       // Power Up Timer 
+.................... #FUSES NOLVP                    //No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O 
+.................... #use delay(int=4000000) 
+0073:  MOVLW  20
+0074:  MOVWF  05
+0075:  MOVLW  04
+0076:  MOVWF  04
+0077:  MOVF   00,W
+0078:  BTFSC  03.2
+0079:  GOTO   088
+007A:  MOVLW  01
+007B:  MOVWF  78
+007C:  CLRF   77
+007D:  DECFSZ 77,F
+007E:  GOTO   07D
+007F:  DECFSZ 78,F
+0080:  GOTO   07C
+0081:  MOVLW  4A
+0082:  MOVWF  77
+0083:  DECFSZ 77,F
+0084:  GOTO   083
+0085:  GOTO   086
+0086:  DECFSZ 00,F
+0087:  GOTO   07A
+0088:  MOVLP  00
+0089:  GOTO   112 (RETURN)
+.................... #use rs232(baud=9600,parity=N,xmit=PIN_A2,rcv=PIN_A1,bits=8,stream=ZIGBEE) 
+*
+0007:  MOVLB  01
+0008:  BCF    0C.2
+0009:  MOVLB  02
+000A:  BCF    0C.2
+000B:  MOVLW  08
+000C:  MOVWF  78
+000D:  GOTO   00E
+000E:  NOP
+000F:  BSF    78.7
+0010:  GOTO   021
+0011:  BCF    78.7
+0012:  MOVLB  00
+0013:  RRF    27,F
+0014:  MOVLB  02
+0015:  BTFSC  03.0
+0016:  BSF    0C.2
+0017:  BTFSS  03.0
+0018:  BCF    0C.2
+0019:  BSF    78.6
+001A:  GOTO   021
+001B:  BCF    78.6
+001C:  DECFSZ 78,F
+001D:  GOTO   012
+001E:  GOTO   01F
+001F:  NOP
+0020:  BSF    0C.2
+0021:  MOVLW  1B
+0022:  MOVWF  04
+0023:  DECFSZ 04,F
+0024:  GOTO   023
+0025:  GOTO   026
+0026:  NOP
+0027:  BTFSC  78.7
+0028:  GOTO   011
+0029:  BTFSC  78.6
+002A:  GOTO   01B
+002B:  MOVLB  00
+002C:  RETURN
+*
+0093:  MOVLB  01
+0094:  BSF    0C.1
+0095:  MOVLB  00
+0096:  BTFSC  0C.1
+0097:  GOTO   096
+0098:  MOVLW  08
+0099:  MOVWF  77
+009A:  CLRF   24
+009B:  BSF    77.7
+009C:  GOTO   0AB
+009D:  BCF    77.7
+009E:  GOTO   0AB
+009F:  BCF    03.0
+00A0:  BTFSC  0C.1
+00A1:  BSF    03.0
+00A2:  RRF    24,F
+00A3:  BSF    77.6
+00A4:  GOTO   0AB
+00A5:  BCF    77.6
+00A6:  DECFSZ 77,F
+00A7:  GOTO   09F
+00A8:  MOVF   24,W
+00A9:  MOVWF  78
+00AA:  GOTO   0B7
+00AB:  MOVLW  1C
+00AC:  BTFSC  77.7
+00AD:  MOVLW  07
+00AE:  MOVWF  78
+00AF:  DECFSZ 78,F
+00B0:  GOTO   0AF
+00B1:  NOP
+00B2:  BTFSC  77.7
+00B3:  GOTO   09D
+00B4:  BTFSC  77.6
+00B5:  GOTO   0A5
+00B6:  GOTO   09F
+.................... #use rs232(baud=9600,parity=N,xmit=PIN_A6,rcv=PIN_A4,bits=8,stream=USB) 
+*
+00BF:  MOVLB  01
+00C0:  BCF    0C.6
+00C1:  MOVLB  02
+00C2:  BCF    0C.6
+00C3:  MOVLW  08
+00C4:  MOVWF  78
+00C5:  GOTO   0C6
+00C6:  NOP
+00C7:  BSF    78.7
+00C8:  GOTO   0D9
+00C9:  BCF    78.7
+00CA:  MOVLB  00
+00CB:  RRF    23,F
+00CC:  MOVLB  02
+00CD:  BTFSC  03.0
+00CE:  BSF    0C.6
+00CF:  BTFSS  03.0
+00D0:  BCF    0C.6
+00D1:  BSF    78.6
+00D2:  GOTO   0D9
+00D3:  BCF    78.6
+00D4:  DECFSZ 78,F
+00D5:  GOTO   0CA
+00D6:  GOTO   0D7
+00D7:  NOP
+00D8:  BSF    0C.6
+00D9:  MOVLW  1B
+00DA:  MOVWF  04
+00DB:  DECFSZ 04,F
+00DC:  GOTO   0DB
+00DD:  GOTO   0DE
+00DE:  NOP
+00DF:  BTFSC  78.7
+00E0:  GOTO   0C9
+00E1:  BTFSC  78.6
+00E2:  GOTO   0D3
+00E3:  MOVLP  00
+00E4:  MOVLB  00
+00E5:  GOTO   126 (RETURN)
+....................  
+....................  
+.................... char timed_getc_TinyBee()  
+.................... {    
+....................    char donnee_zb; 
+....................     
+....................    while(!kbhit())                  //tant qu'il n'y a rien sur la liaison serie ne rien faire. 
+....................       delay_us(10); 
+*
+008A:  BTFSS  0C.1
+008B:  GOTO   091
+008C:  MOVLW  03
+008D:  MOVWF  77
+008E:  DECFSZ 77,F
+008F:  GOTO   08E
+0090:  GOTO   08A
+....................        
+....................        if(kbhit())                  // si il y a quelque chose sur la liaison série 
+0091:  BTFSC  0C.1
+0092:  GOTO   0BA
+....................            donnee_zb = getc(ZIGBEE);// alors l'écrire dans la variable "donnee_zb" 
+*
+00B7:  MOVF   78,W
+00B8:  MOVWF  23
+....................         else                        // si non 
+00B9:  GOTO   0BB
+....................            donnee_zb = 0;           // écrire "0" dans la variable "donnee_zb" 
+00BA:  CLRF   23
+....................    return(donnee_zb);               // retourner "donnee_zb" 
+00BB:  MOVF   23,W
+00BC:  MOVWF  78
+.................... } 
+00BD:  MOVLP  00
+00BE:  GOTO   121 (RETURN)
+....................  
+....................  
+.................... void main() 
+.................... { 
+*
+00E6:  CLRF   05
+00E7:  CLRF   04
+00E8:  MOVLW  1F
+00E9:  ANDWF  03,F
+00EA:  MOVLW  6A
+00EB:  MOVLB  01
+00EC:  MOVWF  19
+00ED:  BCF    0C.2
+00EE:  MOVLB  02
+00EF:  BSF    0C.2
+00F0:  MOVLB  01
+00F1:  BCF    0C.6
+00F2:  MOVLB  02
+00F3:  BSF    0C.6
+00F4:  MOVLB  03
+00F5:  CLRF   0C
+00F6:  CLRF   0D
+00F7:  MOVLB  02
+00F8:  CLRF   12
+00F9:  CLRF   11
+00FA:  CLRF   14
+00FB:  CLRF   13
+00FC:  MOVLB  00
+00FD:  BCF    22.0
+....................    //int1 status; 
+....................    char valeur_zigbee; 
+....................    short etat_bp=0; 
+....................  while(TRUE) 
+....................  { 
+....................     
+....................    if (input(pin_b3)==0&&etat_bp==0)         // si appui sur le bp, alors 
+00FE:  MOVLB  01
+00FF:  BSF    0D.3
+0100:  MOVLB  00
+0101:  BTFSC  0D.3
+0102:  GOTO   115
+0103:  BTFSC  22.0
+0104:  GOTO   115
+....................       { 
+....................          etat_bp=1; 
+0105:  BSF    22.0
+....................          fprintf(ZIGBEE,"START\r");          //envoyer sur la liaison série zigbee "START" 
+0106:  MOVLW  03
+0107:  MOVLB  03
+0108:  MOVWF  11
+0109:  MOVLW  00
+010A:  MOVWF  12
+010B:  MOVLB  00
+010C:  GOTO   02D
+....................          delay_ms(500); 
+010D:  MOVLW  02
+010E:  MOVWF  23
+010F:  MOVLW  FA
+0110:  MOVWF  24
+0111:  GOTO   073
+0112:  DECFSZ 23,F
+0113:  GOTO   10F
+....................       } 
+....................    else if(input(pin_b3)==1&&etat_bp==1) 
+0114:  GOTO   126
+0115:  MOVLB  01
+0116:  BSF    0D.3
+0117:  MOVLB  00
+0118:  BTFSS  0D.3
+0119:  GOTO   11E
+011A:  BTFSS  22.0
+011B:  GOTO   11E
+....................       { 
+....................          etat_bp=0; 
+011C:  BCF    22.0
+....................       } 
+....................        
+....................        
+....................    else //sinon 
+011D:  GOTO   126
+....................       { 
+....................           if(kbhit())  //Si reception d'un message sur la liaison série tinyBee, alors 
+011E:  BTFSC  0C.1
+011F:  GOTO   126
+....................           { 
+....................            valeur_zigbee=timed_getc_TinyBee(); //donnee_zb (retrounée précédement) = valeur_zigbee 
+0120:  GOTO   08A
+0121:  MOVF   78,W
+0122:  MOVWF  21
+....................            fputc(valeur_zigbee, USB);          //écrire valeur_zigbee sur la laison série USB 
+0123:  MOVF   21,W
+0124:  MOVWF  23
+0125:  GOTO   0BF
+....................           } 
+....................       } 
+....................  } 
+0126:  GOTO   0FE
+.................... } 
+0127:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3FCC   INTRC_IO WDT_SW PUT MCLR NOPROTECT NOCPD BROWNOUT NOCLKOUT IESO FCMEN
+   Word  2: 1EFF   NOWRT PLL_SW STVREN BORV24 NODEBUG NOLVP

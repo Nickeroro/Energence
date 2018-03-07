@@ -1,0 +1,51 @@
+
+ROM used: 296 (7%)
+          296 (7%) including unused fragments
+
+          0 Average locations per line
+          14 Average locations per statement
+
+RAM used: 8 (2%) at main() level
+          22 (6%) worst case
+
+Stack used: 2 worst case (out of 16 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   58    21 100  Carte_Centrale.c
+  538     0   0  C:\Program Files (x86)\PICC\devices\16F1827.h
+----- -----
+  596    21 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     23   8   1             @delay_ms1
+0     38  13   1             @PUTCHAR_1_
+ Inline        1             @GETCH_1_
+0     39  13   1             @PUTCHAR_2_
+0     53  18   1   149  3.9  timed_getc_TinyBee
+0     66  22   4   409  4.6  MAIN
+0      4   1   0             @const87
+0     70  24   4             @PSTRINGC7_71
+ Inline        0             @cinit1
+
+Program metrics:
+    Functions               2
+    Statements              21
+    Comments                114
+    Volume (V)              671
+    Difficulty (D)          7.4
+    Effort to implement (E) 4981
+    Time to implement (T)   5 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   4
+    Maintainability (MI)    64
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     3  0  
+00003-007FF   293  1752  
+00800-00FFF     0  2048  
+
+
+
